@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2ede8;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: scroll;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Changed to flex-start to align all at top */
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Common section styles */
+.section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Section 1: Be my guest */
+.be-my-guest {
+    text-align: center;
+}
+
+.be-my-guest h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.signature-line {
+    width: 150px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto 10px;
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 38px;
+}
+
+/* Section 2: Address */
+.address h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Section 3: Report */
+.report h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.report-content {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px;
+    min-height: 150px;
+}
+
+
+
+/* Generelle styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-heading {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.primary-title {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.secondary-title {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+/* Præsentationssektion */
+.presentation-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-container {
+    margin-bottom: 40px;
+}
+
+.features-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* tekst til venstre, billede til højre */
+    align-items: start;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.feature-image {
+    justify-self: end; /* billede placeres til højre i sin celle */
+}
+
+.feature-image img {
+    width: 600px;
+    height: auto;
+    display: block; /* korrekt billedvisning */
+}
+
+/* Dialog grid */
+.dialog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dialog-card {
+    text-align: center;
+}
+
+.dialog-image img{
+    height: 374px;
+    width: 374px;
+    background-color: #e9e9e9;
+    border: 1px dashed #999;
+    margin-bottom: 15px;
+}
+
+.dialog-label {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Fuldbredde billede */
+.full-width-image-section {
+    margin: 40px 0;
+}
+
+
+/* Referencer */
+.references-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Scroll menu */
+.scroll-nav {
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.scroll-menu-container {
+    width: 515px;
+    height: 116px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    border: 1px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: #3b2f29;
+    color: white;
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
+    .dialog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .feature-image {
+        width: 100%;
+        height: 150;
+    }
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
