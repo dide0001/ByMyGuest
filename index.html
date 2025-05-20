@@ -5,106 +5,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be my guest</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/bmg-logo-final.webp" type="Be my guest logo">
 </head>
 
 <body>
-    <nav class="menu-bar">
-        <div class="menu-left">
-            <span>Privat</span>
-            <span>Ethverv</span>
+    <header>
+        <nav class="menu-bar">
+            <div class="menu-left">
+                <span>Privat</span>
+                <span>Erhverv</span>
 
-        </div>
+            </div>
 
-        <div class="logo">
-            <img src="img/bmg-logo-final.webp" alt="Be my guest logo">
-            <p>SINCE 2006</p>
-        </div>
+            <div class="logo">
+                <img src="img/bmg-logo-final.webp" alt="Be my guest logo">
+                <p>SINCE 2006</p>
+            </div>
 
-        <div class="menu-right">
-            <span>Kontakt os</span>
-            <span>Om os</span>
-        </div>
-    </nav>
+            <div class="menu-right">
+                <span>Kontakt os</span>
+                <span>Om os</span>
+            </div>
+        </nav>
 
-
+        <section class="hero-image">
+            <img src="img/Hero-Sektion.webp" alt="Et billede med slogan: Bemyguest, når hver detalje betyder noget">
+            <div class="cta-wrapper">
+                <a href="#privat" class="cta-button light">Privat</a>
+                <a href="#erhverv" class="cta-button dark">Erhverv</a>
+            </div>
+        </section>
+    </header>
 
     <main>
         <section class="presentation-section">
             <div class="presentation-title">
-                <h1>Overskrift</h1>
+                <h1>Catering og rammer</h1>
             </div>
             <div class="mission-container">
 
                 <div class="features-row">
-                    <div class="text-content">
-                        <h2 class="secondary-title">Præsentation/værdier vision/mission</h2>
-                        <p class="features-text">muligheder •<br>faciliteter •</p>
+                    <div class="container">
+                        <div class="text-content">
+                            <h2 class="secondary-title">Mad med mening</h2>
+                            <p class="features-text">Vi er et cateringfirma, der tilbyder skræddersyede løsninger til
+                                alle
+                                dine behov. Uanset om det er til private eller erhvervslivet, har vi de rette
+                                muligheder og faciliteter til at gøre din begivenhed uforglemmelig.</p>
+                        </div>
+
+
+
+                        <div class="info-box">
+                            <div class="info-item">
+                                <div class="info-header">
+                                    <span>Muligheder</span>
+                                    <button class="toggle-btn">+</button>
+                                </div>
+                                <div class="info-content">
+                                    <p>Be My Guest skaber madoplevelser til både hverdag og fest – fra varierede
+                                        frokostordninger og drikkevarer til skræddersyet catering til møder, kurser,
+                                        receptioner og private selskaber. Vi leverer mad ud af huset og tilbyder
+                                        professionel hjælp til planlægning og afvikling af større arrangementer. Ønsker
+                                        I at holde jeres event hos os, har vi både en hyggelig gårdcafé og et
+                                        stemningsfuldt selskabslokale til rådighed.</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-header">
+                                    <span>Faciliteter</span>
+                                    <button class="toggle-btn">+</button>
+                                </div>
+                                <div class="info-content">
+                                    <p>I stueetagen har vi en hyggelig gårdcafé, hvor vi serverer sæsonbaserede retter
+                                        lavet af friske råvarer direkte fra gården. På første sal finder du et lyst og
+                                        stemningsfuldt selskabslokale, perfekt til private fester, møder og
+                                        firmaarrangementer.</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                     <div class="feature-image">
-                        <img src="img/værdier-pic.webp" alt="A picture of food on a platter">
+                        <img src="img/vladimir.webp" alt="Et billede af Vladimir, ejer af 'BeMyGuest">
                     </div>
                 </div>
             </div>
 
             <div class="dialog-grid">
                 <div class="dialog-card">
-                    <div class="dialog-image"> <img src="img/reception-dialog.webp" alt="Et billede af mad"></div>
+                    <div class="image-container">
+                        <div class="dialog-image"> <img src="img/reception-dialog.webp" alt="Et billede af mad">
+                            <button class="cta_btn" onclick="openDialog('articleDialog')">Se mere</button>
+                        </div>
+
+                        <dialog id="articleDialog">
+                            <article>
+                                <p>
+                                    Hos Be My Guest ved vi, hvor vigtigt det er, at receptioner og firmaarrangementer
+                                    ikke bare bliver vellykkede, men også mindeværdige. Vi tilbyder skræddersyet
+                                    catering og eventløsninger, der tager højde for jeres virksomheds profil, ønsker og
+                                    behov – uanset om det er en formel reception, et uformelt netværksarrangement eller
+                                    en stor firmafest.
+                                </p>
+                                <p>
+                                    Vi sørger for, at maden matcher anledningen og sætter den rette stemning med en
+                                    menu, der både imponerer og skaber gode samtaler. Vores erfarne kokke sammensætter
+                                    alt fra lækre kanapéer og buffetløsninger til signaturretter, der afspejler
+                                    årstidens bedste råvarer og bæredygtige valg. Samtidig kan vi tilbyde drikkevarer,
+                                    som komplimenterer menuen, og som giver gæsterne en helhedsoplevelse – altid med
+                                    fokus på kvalitet og balance.
+                                </p>
+                                <p>
+                                    Udover mad og drikke kan vi hjælpe med det praktiske: Professionel servering,
+                                    planlægning og koordinering, så I kan fokusere på at netværke og nyde arrangementet.
+                                    Vi kan håndtere alt fra mindre, intime receptioner til større events med mange
+                                    deltagere, og vores fleksibilitet gør det nemt at tilpasse løsningerne til jeres
+                                    specifikke ønsker.
+                                </p>
+                                <p>
+                                    Vores mål er at skabe rammerne for en vellykket event, hvor alle detaljer er
+                                    gennemtænkte – fra første velkomst til sidste dessert. Med Be My Guest som partner
+                                    kan I trygt overlade mad og logistik til os, og i stedet fokusere på at styrke
+                                    relationer og skabe gode minder blandt kolleger, samarbejdspartnere og kunder.
+                                </p>
+                                <button onclick="closeDialog('articleDialog')" autofocus>Luk</button>
+                            </article>
+                        </dialog>
+                    </div>
                     <p class="dialog-label">Receptioner og firmaarrangementer</p>
                 </div>
                 <div class="dialog-card">
-                    <div class="dialog-image"> <img src="img/kurser-dialog.webp" alt="Et billede af et dækket bord">
+                    <div class="image-container">
+                        <div class="dialog-image"> <img src="img/kurser-dialog.webp" alt="Et billede af et dækket bord">
+                            <button class="cta_btn" onclick="openDialog('FrokostDialog')">Se mere</button>
+                        </div>
+                        <dialog id="FrokostDialog">
+                            <article>
+                                <h3>Frokostordning</h3>
+                                <p>
+                                    En god arbejdsdag kræver energi – og det starter med et godt måltid. Vores
+                                    frokostordning er sammensat med fokus på både smag, variation og ernæring.
+                                    Vi tilbyder dagligt frisklavet mad, der imødekommer forskellige behov og
+                                    præferencer,
+                                    herunder vegetariske og allergivenlige alternativer.
+                                </p>
+                                <p>
+                                    Frokosten leveres fra lokale leverandører, og vi lægger vægt på bæredygtighed og
+                                    kvalitet. Det giver ikke kun glade maver, men også et stærkere fællesskab på tværs
+                                    af
+                                    afdelinger.
+                                </p>
+
+
+
+                                <h3>Møder</h3>
+                                <p>
+                                    Effektive møder skaber klarhed, retning og fremdrift. Hos os prioriterer vi en
+                                    struktureret
+                                    mødekultur, hvor dagsordener, tid og formål er tydeligt defineret.
+                                    Vi benytter moderne mødefaciliteter og digitale værktøjer til at sikre, at alle
+                                    deltagere
+                                    kan bidrage aktivt – både fysisk og online.
+                                </p>
+                                <p>
+                                    Vores møderum er indrettet til både mindre arbejdsgrupper og større præsentationer,
+                                    og
+                                    vi
+                                    tilbyder teknisk support, hvis der er behov.
+                                </p>
+
+
+
+                                <h3>Kurser</h3>
+                                <p>
+                                    Vi tror på livslang læring. Derfor tilbyder vi løbende kurser og kompetenceudvikling
+                                    for
+                                    vores medarbejdere.
+                                    Undervisningen spænder fra faglige specialiseringer til bløde kompetencer som
+                                    kommunikation
+                                    og projektledelse.
+                                </p>
+                                <p>
+                                    Kurserne foregår både internt og i samarbejde med eksterne partnere, og de
+                                    skræddersys
+                                    efter
+                                    behov og ambitioner.
+                                    Uanset niveau er målet det samme: At gøre vores team stærkere, klogere og mere
+                                    motiveret.
+                                </p>
+                                <button onclick="closeDialog('FrokostDialog')" autofocus>Luk</button>
+                            </article>
+                        </dialog>
                     </div>
                     <p class="dialog-label">Frokostordingner, møder og kurser</p>
                 </div>
+
                 <div class="dialog-card">
-                    <div class="dialog-image"><img src="img/private-selskab-dialog.webp" alt="Et billede af mad"></div>
+                    <div class="image-container">
+                        <div class="dialog-image"><img src="img/private-selskab-dialog.webp" alt="Et billede af mad">
+                            <button class="cta_btn" onclick="openDialog('PrivatDialog')">Se mere</button>
+                        </div>
+                        <dialog id="PrivatDialog">
+                            <article>
+                                <p>
+                                    Hos Be My Guest ved vi, at private selskaber handler om mere end blot mad – det
+                                    handler
+                                    om at skabe uforglemmelige øjeblikke sammen med familie og venner i trygge og smukke
+                                    rammer. Derfor tilbyder vi ikke blot catering, men en komplet oplevelse, hvor vi
+                                    skræddersyr både menu og lokaler, så det passer perfekt til netop jeres festlige
+                                    anledning.
+                                </p>
+                                <p>
+                                    Uanset om du planlægger en intim middag, en stor fødselsdag, bryllup, barnedåb eller
+                                    jubilæum, tager vi hånd om alle detaljer fra start til slut. Vores passionerede
+                                    kokke
+                                    komponerer menuer baseret på sæsonens bedste råvarer, der både forkæler smagsløgene
+                                    og
+                                    tager hensyn til eventuelle kostbehov, allergier eller ønsker om bæredygtighed.
+                                </p>
+                                <p>
+                                    Vi tilbyder et bredt udvalg af muligheder, lige fra elegante forretter og
+                                    signaturretter
+                                    til generøse buffeter og festlige desserter, som kan tilpasses jeres stil og tema.
+                                    Vores
+                                    team hjælper også gerne med valg af drikkevarer, som komplementerer menuen og løfter
+                                    hele oplevelsen.
+                                </p>
+                                <p>
+                                    Vores selskabslokaler, placeret i en lys og stemningsfuld atmosfære med udsigt til
+                                    hyggelige gårdmiljøer, kan pyntes og arrangeres efter jeres ønsker – om det er et
+                                    traditionelt selskab eller en mere utraditionel sammenkomst. Skal festen holdes ude?
+                                    Vi
+                                    tilbyder også levering af mad og drikke til jeres private adresse eller andre
+                                    lokationer, hvor vi sørger for at hele arrangementet forløber gnidningsfrit.
+                                </p>
+                                <p>
+                                    Med professionel planlægning og servering fra vores erfarne personale sikrer vi, at
+                                    I
+                                    kan nyde selskabet og fokusere på det vigtigste – jeres gæster. Vi tilbyder
+                                    fleksible
+                                    løsninger, der kan tilpasses både store og små selskaber, og vi står klar til at
+                                    rådgive
+                                    jer gennem hele processen for at sikre, at alle detaljer er på plads.
+                                </p>
+                                <p>
+                                    Be My Guest er mere end catering – vi er din betroede partner i at skabe personlige
+                                    og
+                                    mindeværdige selskaber, hvor hver detalje tæller, og hvor gæstfrihed er i centrum.
+                                </p>
+                                <button onclick="closeDialog('PrivatDialog')" autofocus>Luk</button>
+                            </article>
+                        </dialog>
+                    </div>
                     <p class="dialog-label">Private selskaber</p>
+
                 </div>
+        </section>
+
+        <section class="café-section">
+
+            <div class="café-content">
+                <div class="café-title">
+                    <h2 class="secondary-title">Café Stengården</h2>
+                </div>
+                <p>Café Stengården er en charmerende lokal gårdcafé, der serverer mad lavet på friske råvarer direkte
+                    fra gården. Vi sætter en ære i at tilbyde sæsonbaserede retter, der både smager fantastisk og
+                    støtter lokal bæredygtighed. Caféen er stolt indehaver af det <strong>Økologiske Spisemærke i
+                        Guld</strong>, hvilket sikrer dig økologisk kvalitet i hver bid.</p>
+                <section class="opening-times">
+                    <div class="hours">
+                        <h1>åbningstider</h1>
+                        <ul>
+                            <li>Mandag-Torsdag: Lukket</li>
+                            <li>Fredag: 11-16:30</li>
+                            <li>Lørdag: 11-15:30</li>
+                            <li>Søndag: 11-15:30</li>
+                        </ul>
+                    </div>
+                </section>
+                <p>
+                    <a href="https://www.facebook.com/Stengaardencafe/" target="_blank" rel="noopener"
+                        class="cta-link">Besøg Café Stengårdens Facebook</a>
+                </p>
+
+
+
+                <p><strong>Konference og mødefaciliteter</strong><br>
+                    Vi tilbyder hyggelige og moderne mødefaciliteter, hvor du kan afholde kurser, konferencer eller
+                    private arrangementer med udsigt til den smukke natur omkring gården.</p>
+                <p>
+                    <a href="https://www.stengaarden-konference.dk/om-stengaarden/" target="_blank" rel="noopener"
+                        class="cta-link">Læs mere om Stengårdens konferencefaciliteter</a>
+                </p>
+            </div>
+
+            <div class="café-image">
+                <img src="img/cafe_skilt.webp" alt="Et billede af caféen">
             </div>
         </section>
 
-
         <section class="references-section">
             <h2 class="secondary-title">Referencer</h2>
-            <!-- Reference indhold vil komme her -->
+
         </section>
     </main>
 
     <nav class="scroll-nav">
         <div class="scroll-menu-container">
-            <!-- Scroll menu indhold vil komme her -->
+
             <p>Scroll menu 515 × 116</p>
         </div>
     </nav>
 
     <footer>
         <div class="content-container">
-            <!-- Section 1 -->
+
             <section class="section be-my-guest">
                 <h2>Be my guest</h2>
                 <div class="signature-line"></div>
-                <p class="signature">/Signature/</p>
+                <p class="signature">Vladimir</p>
+                <img class="oekologi-logo" src="img/oekologi-logo.webp" alt="Økologi logo">
+
             </section>
 
-            <!-- Section 2 -->
+
             <section class="section address">
-                <h3>Adresse:</h3>
-                <p>[Din adresse her]</p>
-                <p>[Telefonnummer]</p>
-                <p>[Email]</p>
+                <h3>Information</h3>
+                <p>Høveltevej 40, 3460 Birkerød</p>
+                <p>+45 22 33 39 44</p>
+                <p>vladimir@bemyguest.dk</p>
+
+                <a href="https://www.facebook.com/bemyguest.dk" target="_blank"><img src="img/facebookicon.webp"
+                        alt="Et facebook icon"></a>
+                <a href="https://www.instagram.com/bemyguestcph/"><img src="/img/instaicon.webp"
+                        alt="Et instagram icon"></a>
             </section>
 
-            <!-- Section 3 -->
+
             <section class="section report">
                 <h3>Kontrolrapport</h3>
                 <div class="report-content">
-                    [Rapport indhold]
+                    <a href="https://www.findsmiley.dk/Sider/Search.aspx?k=be%20my%20guest" target="_blank"><img
+                            src="img/kontrol-rapport.webp" alt="Kontrolrapport"></a>
                 </div>
             </section>
         </div>
     </footer>
+
+    <script src="js/info-box.js"></script>
 </body>
 
 </html>
